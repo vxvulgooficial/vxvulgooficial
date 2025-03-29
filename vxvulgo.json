@@ -1,6 +1,11 @@
 {"name":"VX VULGO",
 	"downloads":[
 		{
+			"title":"Schedule I + Online",
+			"uris":["magnet:?xt=urn:btih:db3dca1ad1282bef42143d026741f31395446c3b&dn=Schedule+I&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337"],
+			"uploadDate":"2025-03-25T10:00:00.000Z",
+			"fileSize":"2.1 GB"},
+			{
 			"title":"Memoriapolis (v0.214) [Pre-Instalado] ",
 			"uris":["https://pixeldrain.com/u/LTzt7b5R"],
 			"uploadDate":"2024-09-23T10:00:00.000Z",
@@ -2540,11 +2545,6 @@
 			"uris":["magnet:?xt=urn:btih:db3dca1ad1282bef42143d026741f31395446c3b&dn=Schedule+I&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337"],
 			"uploadDate":"2025-03-27T23:25:53.000Z",
 			"fileSize":"4.7 GB"},
-			{
-			"title":"Schedule I + Online",
-			"uris":["magnet:?xt=urn:btih:db3dca1ad1282bef42143d026741f31395446c3b&dn=Schedule+I&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337"],
-			"uploadDate":"2025-03-25T25:00:00.000Z",
-			"fileSize":"2.1 GB"},
 			{
 			"title":"Star Trucker (v1.0.47.0) [Pre-Instalado]",
 			"uris":["https://gofile.io/d/qFcGtN"],
