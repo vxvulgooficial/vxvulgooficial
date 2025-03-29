@@ -2537,9 +2537,14 @@
 			"fileSize":"226.8 MB"},
 			{
 			"title":"CarX Street (v1.3.1) [Atualizado]",
-			"uris":["magnet:?xt=urn:btih:7188275614ae70bbe4d66d6e1fb0b8145dfab3fb&amp;dn=CarX.Street.v1.3.1.zip&amp;tr=udp://tracker.torrent.eu.org:451/announce&amp;tr=udp://exodus.desync.com:6969/announce&amp;tr=udp://tracker.moeking.me:6969/announce&amp;tr=udp://tracker.opentrackr.org:1337/announce&amp;tr=udp://open.stealth.si:80/announce&amp;tr=udp://tracker.theoks.net:6969/announce&amp;tr=udp://movies.zsw.ca:6969/announce&amp;tr=udp://tracker.tiny-vps.com:6969/announce&amp;tr=udp://tracker-udp.gbitt.info:80/announce&amp;tr=http://tracker.gbitt.info:80/announce&amp;tr=https://tracker.gbitt.info:443/announce&amp;tr=http://tracker.ccp.ovh:6969/announce&amp;tr=udp://tracker.ccp.ovh:6969/announce&amp;tr=udp://tracker.dler.com:6969/announce&amp;tr=http://tracker.bt4g.com:2095/announce"],
-			"uploadDate":"2024-12-23T23:00:00.000Z",
-			"fileSize":"15.63 GB"},
+			"uris":["magnet:?xt=urn:btih:db3dca1ad1282bef42143d026741f31395446c3b&dn=Schedule+I&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337"],
+			"uploadDate":"2025-03-27T23:25:53.000Z",
+			"fileSize":"4.7 GB"},
+			{
+			"title":"Schedule I + Online",
+			"uris":["magnet:?xt=urn:btih:db3dca1ad1282bef42143d026741f31395446c3b&dn=Schedule+I&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337"],
+			"uploadDate":"2025-03-25T25:00:00.000Z",
+			"fileSize":"2.1 GB"},
 			{
 			"title":"Star Trucker (v1.0.47.0) [Pre-Instalado]",
 			"uris":["https://gofile.io/d/qFcGtN"],
