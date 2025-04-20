@@ -1,114 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VX Vulgo Oficial</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VX Vulgo Source</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Rubik', sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 50px 20px;
       text-align: center;
-      overflow-x: hidden;
-      animation: fadeIn 1.2s ease-in;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
+      from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
       font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      background: linear-gradient(to right, #9f80ff, #fff);
+      background: linear-gradient(to right, #ff6ec4, #7873f5);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: glow 3s infinite alternate;
+      margin-bottom: 10px;
     }
 
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #6c63ff; }
-      to { text-shadow: 0 0 20px #ffffff; }
-    }
-
-    .info {
-      font-size: 1.2rem;
-      color: #ddd;
-      margin-bottom: 30px;
-    }
-
-    .copy-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 25px;
-    }
-
-    .copy-btn {
-      background: #6c63ff;
-      border: none;
-      color: #fff;
-      padding: 16px 30px;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 15px;
-      cursor: pointer;
-      box-shadow: 0 0 20px #6c63ff50;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      transition: transform 0.2s, background 0.3s;
-    }
-
-    .copy-btn:hover {
-      background: #574fcf;
-      transform: scale(1.05);
-    }
-
-    .copy-btn svg {
-      width: 20px;
-      height: 20px;
-      fill: white;
-    }
-
-    .install-btn {
-      background: #00d26a;
-      color: #fff;
-      border: none;
-      padding: 16px 35px;
+    p.description {
       font-size: 1.1rem;
-      font-weight: bold;
-      border-radius: 15px;
-      cursor: pointer;
-      margin-top: 20px;
-      text-decoration: none;
-      box-shadow: 0 0 20px #00d26a80;
-      transition: transform 0.2s, background 0.3s;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto 30px;
     }
 
-    .install-btn:hover {
-      background-color: #00a656;
+    .button-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .button-grid a {
+      background: #6c63ff;
+      color: #fff;
+      padding: 14px 25px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 15px #6c63ff50;
+      transition: all 0.2s ease;
+      width: 250px;
+    }
+
+    .button-grid a:hover {
+      background: #574fcf;
       transform: scale(1.05);
     }
 
     .notification {
       background: #32303f;
       color: #fff;
-      padding: 14px 24px;
+      padding: 12px 20px;
       border-radius: 10px;
-      margin-top: 20px;
+      margin-top: 15px;
       display: none;
       animation: fadeInOut 3s forwards;
-      font-size: 0.95rem;
     }
 
     @keyframes fadeInOut {
@@ -118,35 +78,61 @@
       100% { opacity: 0; transform: translateY(10px); }
     }
 
+    .section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #1e1b2d;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #00000040;
+    }
+
     footer {
-      margin-top: auto;
-      padding: 30px;
+      margin-top: 60px;
       font-size: 0.9rem;
-      color: #aaa;
-      animation: fadeIn 2s ease;
+      color: #999;
     }
   </style>
 </head>
 <body>
 
-  <h1>VX Vulgo</h1>
-  <p class="info">Clique abaixo para copiar o link e instalar direto no Hydra Launcher</p>
+  <h1>VX Vulgo Source</h1>
+  <p class="description">
+    Eu criei esta fonte pra fortalecer a comunidade e facilitar o acesso aos jogos no Hydra Launcher. Aqui você encontra versões já prontas, links testados e muita dedicação. Pode pedir jogo também, tamo junto!
+  </p>
 
-  <div class="copy-section">
-    <button class="copy-btn" onclick="copiarLink()">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/></svg>
-      Copiar Link JSON
-    </button>
+  <div class="button-grid">
+    <a href="hydra://install/https://vxvulgooficial.github.io/vxvulgooficial/vxvulgo.json">🔗 Adicionar ao Hydra</a>
+    <a href="#" onclick="copiarLink()">📋 Copiar Link</a>
+    <a href="https://forms.gle/seulink_aqui" target="_blank">🎮 Pedir um jogo</a>
+    <a href="https://paypal.me/seulink" target="_blank">💸 Fazer Doação</a>
   </div>
 
   <div id="notify" class="notification">✅ Link copiado com sucesso!</div>
 
-  <a class="install-btn" href="hydra://install/https://vxvulgooficial.github.io/vxvulgooficial/vxvulgo.json">
-    Instalar no Hydra Launcher
-  </a>
+  <div class="section">
+    <h2>A Minha Fonte</h2>
+    <p>
+      Criei essa fonte com o objetivo de fornecer uma experiência fácil e rápida pra quem usa o Hydra. Se quiser algum jogo novo aqui, é só pedir. As builds são testadas e otimizadas por mim.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Sobre os Links</h2>
+    <p>
+      Eu uso links de sites confiáveis como Gamdie, Repack-Games e Torrent-Games. Todos esses estão recomendados na Megathread da comunidade r/Piracy no Reddit.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Doação</h2>
+    <p>
+      Curtiu o trampo? Se quiser fortalecer, aceito qualquer valor via PayPal. Gratidão total pra quem apoia!
+    </p>
+  </div>
 
   <footer>
-    Feito com 💜 por VX Vulgo Oficial
+    © 2025 VX Vulgo Source — inspirado por Kazumi, com alma própria.  
   </footer>
 
   <script>
@@ -161,5 +147,6 @@
       });
     }
   </script>
+
 </body>
 </html>
