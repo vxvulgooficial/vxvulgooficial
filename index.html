@@ -2,103 +2,89 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>VX Vulgo Oficial</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+      background: #0d0d0d;
       color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
     }
 
-    h1 {
-      font-size: 3rem;
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #6c63ff;
       margin-bottom: 20px;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 40px;
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 5px;
     }
 
-    .link-box {
-      background-color: #ffffff10;
-      padding: 20px 30px;
-      border-radius: 20px;
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .link-input {
-      background: transparent;
-      border: none;
-      color: #fff;
+    p.bio {
       font-size: 1rem;
-      width: 300px;
-      outline: none;
+      color: #bbb;
+      text-align: center;
+      max-width: 400px;
+      margin-bottom: 30px;
     }
 
-    .copy-btn {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 10px;
-      background-color: #6c63ff;
-      color: white;
+    .links {
+      width: 100%;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .link-btn {
+      text-decoration: none;
+      background: #6c63ff;
+      color: #fff;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
       font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
+      transition: background 0.3s ease;
     }
 
-    .copy-btn:hover {
-      background-color: #574fcf;
+    .link-btn:hover {
+      background: #574fcf;
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
+      margin-top: 40px;
       font-size: 0.8rem;
-      opacity: 0.7;
+      color: #666;
     }
   </style>
 </head>
 <body>
+
+  <img src="https://i.imgur.com/DPVM1v3.png" alt="Avatar VX" class="avatar" />
+
   <h1>VX Vulgo Oficial</h1>
-  <p>Copie o link abaixo para compartilhar com geral:</p>
-  <div class="link-box">
-    <input type="text" id="linkInput" class="link-input" value="https://github.com/vxvulgooficial" readonly />
-    <button class="copy-btn" onclick="copiarLink()">Copiar</button>
+  <p class="bio">Artista digital, desenvolvedor, mente criativa. Aqui estão meus links principais 👇</p>
+
+  <div class="links">
+    <a class="link-btn" href="https://www.instagram.com/vxvulgooficial" target="_blank">Instagram</a>
+    <a class="link-btn" href="https://www.youtube.com/@vxvulgooficial" target="_blank">YouTube</a>
+    <a class="link-btn" href="https://github.com/vxvulgooficial" target="_blank">GitHub</a>
+    <a class="link-btn" href="https://vxvulgooficial.github.io" target="_blank">Meu Portfólio</a>
   </div>
 
   <footer>
     Feito com 💜 por VX Vulgo Oficial
   </footer>
 
-  <script>
-    function copiarLink() {
-      const input = document.getElementById("linkInput");
-      input.select();
-      input.setSelectionRange(0, 99999);
-      document.execCommand("copy");
-
-      alert("Link copiado: " + input.value);
-    }
-  </script>
 </body>
 </html>
-
