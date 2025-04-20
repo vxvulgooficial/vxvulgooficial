@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: 'Rubik', sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      color: #fff;
+      background: #0c0f1a;
+      color: #ffffff;
       text-align: center;
       padding: 40px 20px;
       animation: fadeIn 1.5s ease;
@@ -22,17 +22,17 @@
     }
 
     h1 {
-      font-size: 3rem;
-      background: linear-gradient(to right, #ff6ec4, #7873f5);
+      font-size: 3.2rem;
+      background: linear-gradient(to right, #00f0ff, #007fff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       text-transform: uppercase;
     }
 
     p.description {
       font-size: 1.1rem;
-      color: #ccc;
+      color: #cfcfcf;
       max-width: 700px;
       margin: 0 auto 30px;
     }
@@ -46,25 +46,25 @@
     }
 
     .button-grid a {
-      background: #6c63ff;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
       color: #fff;
       padding: 14px 25px;
       border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
-      box-shadow: 0 4px 15px #6c63ff50;
-      transition: all 0.2s ease;
-      width: 250px;
+      box-shadow: 0 4px 20px #00c6ff50;
+      transition: all 0.3s ease;
+      width: 260px;
     }
 
     .button-grid a:hover {
-      background: #574fcf;
+      background: linear-gradient(135deg, #0072ff, #0051cc);
       transform: scale(1.05);
     }
 
     .notification {
-      background: #32303f;
-      color: #fff;
+      background: #1d2533;
+      color: #00f7ff;
       padding: 12px 20px;
       border-radius: 10px;
       margin-top: 15px;
@@ -82,30 +82,51 @@
     .section {
       max-width: 800px;
       margin: 40px auto;
-      padding: 20px;
-      background: #1e1b2d;
+      padding: 25px;
+      background: #131924;
       border-radius: 15px;
-      box-shadow: 0 0 10px #00000040;
+      box-shadow: 0 0 10px #00000060;
+      text-align: left;
+    }
+
+    .section h2 {
+      color: #00cfff;
+    }
+
+    .section a {
+      color: #00f0ff;
+      text-decoration: none;
+    }
+
+    .section a:hover {
+      text-decoration: underline;
     }
 
     footer {
       margin-top: 60px;
       font-size: 0.9rem;
-      color: #999;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .button-grid a {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
 
   <h1>VX VULGO</h1>
+
   <p class="description">
     Eu criei esta fonte pra fortalecer a comunidade e facilitar o acesso aos jogos no Hydra Launcher. Aqui você encontra versões já prontas, links testados e muita dedicação. Pode pedir jogo também, tamo junto!
   </p>
 
   <div class="button-grid">
-    <a href="hydralauncher://install-source?urls=https://vxvulgooficial.github.io/vxvulgooficial/vxvulgo.json">🔗 Adicionar ao Hydra</a>
+    <a href="hydralauncher://install-source?urls=https://vxvulgooficial.github.io/vxvulgooficial/vxvulgo.json">🎮 Adicionar ao Hydra</a>
     <a href="#" onclick="copiarLink()">📋 Copiar Link</a>
-    <a href="https://forms.gle/seulink_aqui" target="_blank">🎮 Pedir um jogo</a>
+    <a href="https://forms.gle/seulink_aqui" target="_blank">📝 Pedir um jogo</a>
     <a href="https://paypal.me/seulink" target="_blank">💸 Fazer Doação</a>
   </div>
 
@@ -121,7 +142,12 @@
   <div class="section">
     <h2>Sobre os Links</h2>
     <p>
-      Eu uso links de sites confiáveis como Gamdie, Repack-Games e Torrent-Games. Todos esses estão recomendados na Megathread da comunidade r/Piracy no Reddit.
+      Eu uso links de sites confiáveis como 
+      <a href="https://gamdie.com" target="_blank">Gamdie</a>, 
+      <a href="https://repack-games.com" target="_blank">Repack-Games</a> e 
+      <a href="https://torrent-games.net" target="_blank">Torrent-Games</a>. 
+      Todos esses estão recomendados na 
+      <a href="https://reddit.com/r/Piracy/wiki/megathread" target="_blank">Megathread da comunidade r/Piracy no Reddit</a>.
     </p>
   </div>
 
