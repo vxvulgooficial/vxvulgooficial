@@ -9,101 +9,106 @@
     body {
       margin: 0;
       font-family: 'Rubik', sans-serif;
-      background: linear-gradient(to right, #1f1c2c, #928dab);
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
       color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
-      min-height: 100vh;
+      overflow-x: hidden;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
+      font-size: 3rem;
       font-weight: 700;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #9f80ff, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #6c63ff; }
+      to { text-shadow: 0 0 20px #ffffff; }
     }
 
     .info {
-      color: #e0e0e0;
+      font-size: 1.2rem;
+      color: #ddd;
       margin-bottom: 30px;
-      font-size: 1.1rem;
     }
 
-    .copy-box {
+    .copy-section {
       display: flex;
+      justify-content: center;
       align-items: center;
-      background: #2e2b3f;
-      border-radius: 12px;
-      overflow: hidden;
-      max-width: 500px;
-      width: 100%;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px #00000030;
-    }
-
-    .copy-box input {
-      flex: 1;
-      background: transparent;
-      border: none;
-      color: #fff;
-      padding: 15px;
-      font-size: 0.95rem;
-      outline: none;
+      margin-bottom: 25px;
     }
 
     .copy-btn {
-      background-color: #6c63ff;
+      background: #6c63ff;
       border: none;
-      padding: 15px 20px;
-      cursor: pointer;
       color: #fff;
+      padding: 16px 30px;
+      font-size: 1rem;
       font-weight: bold;
-      transition: background 0.3s;
+      border-radius: 15px;
+      cursor: pointer;
+      box-shadow: 0 0 20px #6c63ff50;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
+      transition: transform 0.2s, background 0.3s;
     }
 
     .copy-btn:hover {
-      background-color: #574fcf;
+      background: #574fcf;
+      transform: scale(1.05);
     }
 
     .copy-btn svg {
-      width: 18px;
-      height: 18px;
+      width: 20px;
+      height: 20px;
       fill: white;
     }
 
     .install-btn {
-      background-color: #00d26a;
+      background: #00d26a;
       color: #fff;
       border: none;
-      padding: 15px 30px;
-      border-radius: 12px;
-      font-size: 1rem;
+      padding: 16px 35px;
+      font-size: 1.1rem;
       font-weight: bold;
+      border-radius: 15px;
       cursor: pointer;
       margin-top: 20px;
-      transition: background 0.3s;
       text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 4px 12px #00d26a50;
+      box-shadow: 0 0 20px #00d26a80;
+      transition: transform 0.2s, background 0.3s;
     }
 
     .install-btn:hover {
       background-color: #00a656;
+      transform: scale(1.05);
     }
 
     .notification {
       background: #32303f;
       color: #fff;
-      padding: 12px 20px;
+      padding: 14px 24px;
       border-radius: 10px;
       margin-top: 20px;
       display: none;
       animation: fadeInOut 3s forwards;
+      font-size: 0.95rem;
     }
 
     @keyframes fadeInOut {
@@ -115,22 +120,22 @@
 
     footer {
       margin-top: auto;
-      padding: 20px;
+      padding: 30px;
       font-size: 0.9rem;
-      color: #bbb;
+      color: #aaa;
+      animation: fadeIn 2s ease;
     }
   </style>
 </head>
 <body>
 
   <h1>VX Vulgo</h1>
-  <p class="info">Copie o link abaixo ou instale direto no Hydra Launcher:</p>
+  <p class="info">Clique abaixo para copiar o link e instalar direto no Hydra Launcher</p>
 
-  <div class="copy-box">
-    <input type="text" id="jsonLink" value="https://vxvulgooficial.github.io/vxvulgooficial/vxvulgo.json" readonly />
+  <div class="copy-section">
     <button class="copy-btn" onclick="copiarLink()">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16h14c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z"/></svg>
-      Copiar
+      Copiar Link JSON
     </button>
   </div>
 
@@ -146,10 +151,8 @@
 
   <script>
     function copiarLink() {
-      const input = document.getElementById("jsonLink");
-      input.select();
-      input.setSelectionRange(0, 99999);
-      navigator.clipboard.writeText(input.value).then(() => {
+      const link = "https://vxvulgooficial.github.io/vxvulgooficial/vxvulgo.json";
+      navigator.clipboard.writeText(link).then(() => {
         const notify = document.getElementById("notify");
         notify.style.display = "block";
         setTimeout(() => {
